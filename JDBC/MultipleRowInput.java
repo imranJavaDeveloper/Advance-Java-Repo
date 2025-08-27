@@ -1,5 +1,4 @@
 
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
@@ -11,15 +10,11 @@ public class MultipleRowInput {
         String url = "jdbc:mysql://localhost:3306/school";
         String user = "root";
         String password = "root";
-
-
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection con = DriverManager.getConnection(url, user, password);
         Statement st= con.createStatement();
         Scanner sc= new Scanner(System.in);
-
         while (true){
-
 
             System.out.println("enter emp id");
             int eno= sc.nextInt();
